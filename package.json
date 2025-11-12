@@ -1,0 +1,48 @@
+{
+  "name": "email-service-microservice",
+  "version": "1.0.0",
+  "main": "src/server.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "node --loader ts-node/esm src/server.ts",
+    "eslint-check-only": "npx eslint .",
+    "eslint-fix": "npx eslint . --fix",
+    "prettier": "npx prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/amqplib": "^0.10.8",
+    "@types/axios": "^0.9.36",
+    "@types/handlebars": "^4.0.40",
+    "@types/node": "^24.10.1",
+    "@types/nodemailer": "^7.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.46.4",
+    "@typescript-eslint/parser": "^8.46.4",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.5.0",
+    "jiti": "^2.6.1",
+    "prettier": "^3.6.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.9",
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.2",
+    "handlebars": "^4.7.8",
+    "nodemailer": "^7.0.10",
+    "pino": "^10.1.0",
+    "pino-pretty": "^13.1.2"
+  }
+}
