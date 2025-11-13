@@ -1,5 +1,5 @@
-import nodemailer from 'nodemailer';
-import Handlebars from 'handlebars';
+import nodemailer from "nodemailer";
+import Handlebars from "handlebars";
 
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST!,
@@ -14,7 +14,7 @@ export async function sendEmail(
   to: string,
   subject: string,
   templateBody: string,
-  data: Record<string, any>
+  data: Record<string, any>,
 ) {
   const compile = Handlebars.compile(templateBody);
   const html = compile(data);
